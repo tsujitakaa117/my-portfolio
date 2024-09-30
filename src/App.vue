@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- ナビゲーションメニュー -->
+    <nav class="navbar">
+      <ul class="menu">
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/profile">Profile</router-link></li>
+        <li><router-link to="/works">Works</router-link></li>
+        <li><router-link to="/blog">Blog</router-link></li>
+      </ul>
+    </nav>
+
+    <!-- ここに現在のルートに対応するコンポーネントが表示されます -->
+    <router-view>
+    </router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* 必要に応じてスタイルを記述します */
 </style>
