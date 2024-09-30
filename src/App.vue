@@ -23,5 +23,28 @@ export default {
 </script>
 
 <style>
-/* 必要に応じてスタイルを記述します */
+/* ナビゲーションメニュー */
+.navbar {
+  background-color: #bd9acd;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  min-width: 100%;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul {
+  list-style-type: none;
+  margin-right: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
 </style>
