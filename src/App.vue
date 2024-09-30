@@ -1,18 +1,23 @@
 <template>
   <div id="app">
     <!-- ナビゲーションメニュー -->
-    <nav class="navbar">
+
+    <div class="navbar">
       <ul class="menu">
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/profile">Profile</router-link></li>
-        <li><router-link to="/works">Works</router-link></li>
         <li><router-link to="/blog">Blog</router-link></li>
       </ul>
-    </nav>
+    </div>
 
     <!-- ここに現在のルートに対応するコンポーネントが表示されます -->
     <router-view>
     </router-view>
+    <footer>
+      <p>Contact</p>
+      <p>Mail: jiino0607@gmail.com</p>
+      <a href="https://github.com/tsujitakaa117">github</a>
+    </footer>
   </div>
 </template>
 
@@ -27,9 +32,11 @@ export default {
 .navbar {
   background-color: #bd9acd;
   display: flex;
-  justify-content: center;
-  position: fixed;
+  justify-content: right;
+
   min-width: 100%;
+  margin-top: 0;
+  hidden: 0;
 }
 
 .menu {
@@ -46,5 +53,21 @@ export default {
 
 .menu li {
   padding: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #bd9acd;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
 }
 </style>
