@@ -26,33 +26,21 @@
     </v-main>
 
     <!-- フッター -->
-    <v-footer
-    class="bg-indigo lighten-1 text-center d-flex flex-column pa-4"
+    <v-footer 
+    class="bg-indigo lighten-1 text-center d-flex flex-column pa-4 height-10px"
   >
     <!-- ソーシャルアイコンボタン -->
-    <div>
-      <v-btn
-        v-for="icon in icons"
-        :key="icon"
-        icon
-        class="mx-4"
-        variant="text"
-      >
-        <v-icon>{{ icon }}</v-icon>
-      </v-btn>
-    </div>
+ 
 
     <!-- 説明テキスト -->
     <div class="pt-4">
-      Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      あああああああああああああああ
     </div>
 
     <v-divider class="my-4"></v-divider>
 
     <!-- 年とVuetify -->
-    <div>
-      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-    </div>
+
   </v-footer>
   </v-app>
 </template>

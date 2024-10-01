@@ -52,6 +52,7 @@
               <v-chip color="secondary" dark>Vue.js</v-chip>
               <v-chip color="blue" dark>Python</v-chip>
               <v-chip color="green" dark>Team Management</v-chip>
+              <v-chip color="green" dark>Unity</v-chip>
             </v-chip-group>
           </v-card-text>
         </v-card>
@@ -67,14 +68,20 @@
             <v-list dense>
               <v-list-item>
                 <v-list-item-content>
-                  <v-list-item-title>Project 1: Web Application Development</v-list-item-title>
-                  <v-list-item-subtitle>A modern web application built with Vue.js and Vuetify.</v-list-item-subtitle>
+                  <v-list-item-title>Project 1: 原子スケール分解能を持つ、次世代リニアエンコーダの開発</v-list-item-title>
+                  <v-list-item-subtitle>光学現象を用いて今までにない計測システムの開発をしています</v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
               <v-list-item>
                 <v-list-item-content>
-                  <v-list-item-title>Project 2: Engineering Solution</v-list-item-title>
-                  <v-list-item-subtitle>Developed an innovative solution for optimizing engineering workflows.</v-list-item-subtitle>
+                  <v-list-item-title>Project 2: Unityを用いたゲーム開発</v-list-item-title>
+                  <v-list-item-subtitle>UnityとOculus Questを用いて世界観に没入できるVRゲームを開発しています</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title>Project 3: Vue.jsを用いたHP作成</v-list-item-title>
+                  <v-list-item-subtitle>UI/UXデザインについて勉強しており、HPを作成しています</v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
             </v-list>
