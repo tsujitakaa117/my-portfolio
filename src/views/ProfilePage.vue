@@ -1,57 +1,162 @@
 <template>
-    <div class="video-container">
-      <video autoplay muted loop id="myVideo">
-        <source src="../assets/14831_1280x720.mp4" type="video/mp4">
-      </video>
-  
-      <!-- Text overlay -->
-      <div class="overlay-text">
-        <h1>About me</h1>
-      </div>
-    </div>
-    <div class = "border">
-        <h2>Profile</h2>
-    </div>
-    <div class = "content">
-      <img src="../assets/me.jpg" alt="me">
-      <div class = "text">
-        <h2>-名前-</h2>
-        <p>辻野貴大</p>
-        <h2>-生年月日-</h2>
-        <p>2001年6月7日</p>
-        <h2>-出身地-</h2>
-        <p>北海道札幌市</p>
-        <h2>-趣味-</h2>
-        <p>ギター、ゲーム制作、読書</p>
-        <h2>-History-</h2>
-        2001年6月   北海道札幌市にて誕生<br>
-        2021年4月   東京大学理科二類入学<br>
-        2023年3月   東京大学工学部精密工学科進学<br>
-        2024年3月   <a href =https://www.photon.rcast.u-tokyo.ac.jp/>高橋道畑研究室</a>にて研究開始<br>
-        2025年3月   東京大学大学院工学系研究科進学予定<br>
-        <h2>-Skill-</h2>
-        <p>Python, C++, Java, HTML, CSS, JavaScript, Vue.js, Unity, Blender<br>を習得しています<br><br>
-            中国語、英語、日本語を話すことができます<br>
-            科学技術で人類を進化させることが夢です</p>
-    </div>
-    </div>
-    <div class = "border2">
-        <h2>Awards</h2>
-    </div>
+   <v-container fluid class="profile-container">
+    <!-- プロフィールカード -->
+    <v-row justify="center">
+      <v-col cols="12" md="6">
+        <v-card height = "auto">
+          <!-- プロフィール画像 -->
+          <v-img
+            :src="require('../assets/me.jpg')"
+            alt="Profile Picture"
+            height="auto"
+            class="grey lighten-2"
+            cover
+          ></v-img>
 
-    <div class ="awardlist">
-        <ul>
-            <li>
-                <div class="v-card">
-                    <h2><nobr>2024/05<br>東京大学五月祭グランプリ受賞</nobr></h2>
-                    <img src="../assets/IMG_2910.jpg" alt="award">
-                    <div class="v-card__text">
-                        <p>自身の開発したゲーム、およびチームリーダとして学科企画「精密Lab.」にて最優秀賞を獲得しました </p>
-                    </div>
-                </div>
-            </li>
-            </ul>
-    </div>
+          <!-- プロフィール詳細 -->
+          <v-card-title class="headline">Takahiro Tsujino</v-card-title>
+          <v-card-subtitle>Engineer / Developer / Researcher</v-card-subtitle>
+
+          <v-card-text height = "auto">
+            初めまして、私の名前は辻野貴大です<br>
+            私は東京大学の学生で、エンジニア、開発者、研究者として活動しています。<br>
+            私の専門分野は計測工学、Web開発、Unityによるゲーム開発です。<br>
+            これまでに多くのプロジェクトに携わり、様々な技術を習得してきました。<br>
+            今後も新しい技術を学び、新しいプロジェクトに挑戦していきたいと考えています。<br>
+          </v-card-text>
+
+          <!-- ソーシャルメディアリンク -->
+          <v-card-actions>
+            <v-btn icon>
+              <v-icon color="blue darken-2">mdi-linkedin</v-icon>
+            </v-btn>
+            <v-btn icon>
+              <v-icon color="indigo">mdi-github</v-icon>
+            </v-btn>
+            <v-btn icon>
+              <v-icon color="red">mdi-instagram</v-icon>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <!-- スキルセクション -->
+    <v-row justify="center" class="mt-5">
+      <v-col cols="12" md="6">
+        <v-card>
+          <v-card-title>Skills</v-card-title>
+          <v-card-text>
+            <v-chip-group column>
+              <v-chip color="primary" dark>JavaScript</v-chip>
+              <v-chip color="secondary" dark>Vue.js</v-chip>
+              <v-chip color="blue" dark>Python</v-chip>
+              <v-chip color="green" dark>Team Management</v-chip>
+            </v-chip-group>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <!-- プロジェクトセクション -->
+    <v-row justify="center" class="mt-5">
+      <v-col cols="12" md="6">
+        <v-card>
+          <v-card-title>Projects</v-card-title>
+          <v-card-text>
+            <v-list dense>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title>Project 1: Web Application Development</v-list-item-title>
+                  <v-list-item-subtitle>A modern web application built with Vue.js and Vuetify.</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title>Project 2: Engineering Solution</v-list-item-title>
+                  <v-list-item-subtitle>Developed an innovative solution for optimizing engineering workflows.</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+    <v-container class="border">
+    <v-row>
+      <v-col class="text-center">
+        <h2>Awards</h2>
+      </v-col>
+    </v-row>
+  </v-container>
+    <v-container fluid height="1400px">
+      <v-row justify="center">
+        <v-col>
+    <v-card max-width="400">
+    <v-img
+      :src="require('../assets/IMG_2910.jpg')"
+      alt="Desert"
+      height="300px"
+      class="grey lighten-2"
+      cover
+    ></v-img>
+    <v-card-title primary-title>
+      <div>
+        <h3 class="headline mb-0">五月祭2024 グランプリ受賞</h3>
+        <div class="grey--text">東大の学園祭である五月祭にて企画最優秀賞を獲得しました</div>
+      </div>
+    </v-card-title>
+
+    <v-card-actions>
+      <v-btn text color="blue">Learn More</v-btn>
+    </v-card-actions>
+  </v-card>
+  </v-col>
+  <v-col>
+  <v-card max-width="400">
+    <v-img
+      :src="require('../assets/IMG_2910.jpg')"
+      alt="Desert"
+      height="300px"
+      class="grey lighten-2"
+      cover
+    ></v-img>
+    <v-card-title primary-title>
+      <div>
+        <h3 class="headline mb-0">おちんちん</h3>
+        <div class="grey--text">ちんこちんこちんこ</div>
+      </div>
+    </v-card-title>
+
+    <v-card-actions>
+      <v-btn text color="blue">Learn More</v-btn>
+    </v-card-actions>
+  </v-card>
+  </v-col>
+  <v-col>
+  <v-card max-width="400">
+    <v-img
+      :src="require('../assets/IMG_2910.jpg')"
+      alt="Desert"
+      height="300px"
+      class="grey lighten-2"
+      cover
+    ></v-img>
+    <v-card-title primary-title>
+      <div>
+        <h3 class="headline mb-0">ちんこ</h3>
+        <div class="grey--text">ちんこ</div>
+      </div>
+    </v-card-title>
+
+    <v-card-actions>
+      <v-btn text color="blue">Learn More</v-btn>
+    </v-card-actions>
+  </v-card>
+  </v-col>
+</v-row>
+</v-container>
   </template>
   
   <script>
@@ -69,142 +174,7 @@
 
 
   <style scoped>
-  /* Video container */
-  .video-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full screen */
-    overflow: hidden;
 
-  }
-  
-  #myVideo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the entire background */
-    z-index: -1; /* Behind the text */
-  }
-  
-  /* Text overlay */
-  .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 1; /* Ensure it's above the video */
-
-  }
-  
-  .overlay-text h1 {
-    font-size:6rem;
-  }
-  
-  .overlay-text p {
-    font-size: 1.5rem;
-  }
-    .border
-    {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    .border h2
-    {
-        font-size: 2rem;
-        margin-left: 50%;
-        margin-right: auto;
-        justify-content: center;
-    }
-
-  .content 
-  {
-    display: flex;
-    border: 1px solid black;
-    width: 85%;
-    background-color: #bd9acd;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-  }
-  .content img
-    {
-        width: 30%;
-        display: block;
-        margin-left: 0;
-        border-radius: 50%;
-        padding: 50px;
-        height: 30%;
-        margin-top: 3%;
-  }
-    .content h2
-    {
-        font-size: 2rem;
-        margin-left: 0;
-    }
-    .text
-    {
-        padding: 50px;
-    }
-    .border2 h2
-    {
-        font-size: 2rem;
-        margin-left: 50%;
-        margin-right: auto;
-        justify-content: center;
-    }
-    .border2
-    {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    .v-card
-    {
-        background-color: #bd9acd;
-        border-radius: 10px;
-        border: 1px solid black;
-    }
-    .awardlist
-    {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 100px;
-    }
-    .awardlist ul
-    {
-        list-style-type: none;
-    }
-    .awardlist li
-    {
-        margin-top: 20px;
-        width: 20%;
-        height:auto;
-    }
-    .v-card img
-    {
-        width: 100%;
-
-    }
-    .v-card__text
-    {
-        padding: 10px;
-    }
-    .vcard h2
-    {
-        font-size: auto;
-        margin-left: 50%;
-        
-    }
 
   </style>
   
