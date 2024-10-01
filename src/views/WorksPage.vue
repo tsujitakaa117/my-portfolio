@@ -1,93 +1,69 @@
 <template>
-
-
-  <!-- タイトル -->
-  <v-container class="border">
-    <v-row>
-      <v-col class="text-center">
-        <h2>私の作った作品たち</h2>
-      </v-col>
+  <BorderText text="What I made"></BorderText>
+  <v-container fluid class="profile-container">
+    <v-row justify="center">
+      <CardComponent
+        v-for="award in awards"
+        :key="award.title"
+        :title="award.title"
+        :description="award.description"
+        :image="award.image"
+        :expandedDescription="award.expandedDescription"
+      ></CardComponent>
     </v-row>
   </v-container>
-    <v-container fluid height="1400px">
-      <v-row justify="center">
-        <v-col>
-    <v-card max-width="400">
-    <v-img
-      :src="require('../assets/IMG_2910.jpg')"
-      alt="Desert"
-      height="300px"
-      class="grey lighten-2"
-      cover
-    ></v-img>
-    <v-card-title primary-title>
-      <div>
-        <h3 class="headline mb-0">タイトル！</h3>
-        <div class="grey--text">説明文！</div>
-      </div>
-    </v-card-title>
+  </template>
+  
+  <script>
+  import CardComponent from "@/components/CardComponent.vue"; // カードコンポーネントをインポート
+  import BorderText from '@/components/BorderText.vue';
 
-    <v-card-actions>
-      <v-btn text color="blue">Learn More</v-btn>
-    </v-card-actions>
-  </v-card>
-  </v-col>
-  <v-col>
-  <v-card max-width="400">
-    <v-img
-      :src="require('../assets/IMG_2910.jpg')"
-      alt="Desert"
-      height="300px"
-      class="grey lighten-2"
-      cover
-    ></v-img>
-    <v-card-title primary-title>
-      <div>
-        <h3 class="headline mb-0">おちんちん</h3>
-        <div class="grey--text">ちんこちんこちんこ</div>
-      </div>
-    </v-card-title>
 
-    <v-card-actions>
-      <v-btn text color="blue">Learn More</v-btn>
-    </v-card-actions>
-  </v-card>
-  </v-col>
-  <v-col>
-  <v-card max-width="400">
-    <v-img
-      :src="require('../assets/IMG_2910.jpg')"
-      alt="Desert"
-      height="300px"
-      class="grey lighten-2"
-      cover
-    ></v-img>
-    <v-card-title primary-title>
-      <div>
-        <h3 class="headline mb-0">ちんこ</h3>
-        <div class="grey--text">ちんこ</div>
-      </div>
-    </v-card-title>
-
-    <v-card-actions>
-      <v-btn text color="blue">Learn More</v-btn>
-    </v-card-actions>
-  </v-card>
-  </v-col>
-</v-row>
-</v-container>
-</template>
+  export default {
+    components: {
+      CardComponent,
+      BorderText,
+    },
+    data() {
+      return {
+        Text: "Awards",
+        awards: [
+          {
+            title: "Best Paper Award",
+            description: "Awarded for the paper on the development of a new measurement system using optical phenomena",
+            image: require("@/assets/IMG_2910.jpg"),
+            expandedDescription: "This paper was awarded for the development of a new measurement system using optical phenomena. The system has a resolution of atomic scale and is expected to be used in various fields.",
+          },
+          {
+            title: "Best Presentation Award",
+            description: "Awarded for the presentation on the development of a new measurement system using optical phenomena",
+            image: require("@/assets/IMG_2910.jpg"),
+            expandedDescription: "This presentation was awarded for the development of a new measurement system using optical phenomena. The system has a resolution of atomic scale and is expected to be used in various fields.",
+          },
+          {
+            title: "Best Poster Award",
+            description: "Awarded for the poster on the development of a new measurement system using optical phenomena",
+            image: require("@/assets/IMG_2910.jpg"),
+            expandedDescription: "This poster was awarded for the development of a new measurement system using optical phenomena. The system has a resolution of atomic scale and is expected to be used in various fields.",
+          },
+        ],
+      };
+    },
+  };
 
 
 
 
-<script>
-export default {
-    name: 'WorksPage',
-};
-
-</script>
+  </script>
+  
 
 
-<style scoped>
-</style>
+
+
+
+
+  <style scoped>
+
+
+  </style>
+  
