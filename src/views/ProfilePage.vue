@@ -43,7 +43,7 @@
         <ul>
             <li>
                 <div class="v-card">
-                    <h2>2024/05 東京大学五月祭グランプリ受賞</h2>
+                    <h2><nobr>2024/05<br>東京大学五月祭グランプリ受賞</nobr></h2>
                     <img src="../assets/IMG_2910.jpg" alt="award">
                     <div class="v-card__text">
                         <p>自身の開発したゲーム、およびチームリーダとして学科企画「精密Lab.」にて最優秀賞を獲得しました </p>
@@ -58,6 +58,8 @@
   export default {
     name: 'ProfilePage',
   };
+
+  
   </script>
   
 
@@ -186,6 +188,7 @@
     {
         margin-top: 20px;
         width: 20%;
+        height:auto;
     }
     .v-card img
     {
@@ -198,7 +201,9 @@
     }
     .vcard h2
     {
-        font-size: 1.5rem;
+        font-size: auto;
+        margin-left: 50%;
+        
     }
 
   </style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>blog</h1>
-        <p>blog</p>
+        <p>coming soon</p>
     </div>
 </template>
 

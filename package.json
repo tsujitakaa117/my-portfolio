@@ -13,7 +13,8 @@
     "vue": "^3.2.13",
     "vue-router": "^4.0.13",
     "vue-youtube-embed": "^2.2.2",
-    "vue3-youtube": "^0.1.9"
+    "vue3-youtube": "^0.1.9",
+    "vuetify": "^3.7.0-beta.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
