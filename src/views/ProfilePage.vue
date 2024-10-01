@@ -22,7 +22,7 @@
         <h2>-出身地-</h2>
         <p>北海道札幌市</p>
         <h2>-趣味-</h2>
-        <p>ギター、ゲーム制作、</p>
+        <p>ギター、ゲーム制作、読書</p>
         <h2>-History-</h2>
         2001年6月   北海道札幌市にて誕生<br>
         2021年4月   東京大学理科二類入学<br>
@@ -138,6 +138,8 @@
         margin-left: 0;
         border-radius: 50%;
         padding: 50px;
+        height: 30%;
+        margin-top: 3%;
   }
     .content h2
     {
@@ -176,7 +178,7 @@
         margin-top: 20px;
         margin-bottom: 100px;
     }
-    . awardlist ul
+    .awardlist ul
     {
         list-style-type: none;
     }

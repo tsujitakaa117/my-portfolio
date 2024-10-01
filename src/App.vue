@@ -6,6 +6,7 @@
       <ul class="menu">
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/profile">Profile</router-link></li>
+        <li><router-link to="/works">Works</router-link></li>
         <li><router-link to="/blog">Blog</router-link></li>
       </ul>
     </div>
