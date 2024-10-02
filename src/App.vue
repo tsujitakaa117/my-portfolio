@@ -34,7 +34,8 @@
 
     <!-- 説明テキスト -->
     <div class="pt-4">
-      あああああああああああああああ
+      mail: jiino0607@gmail.com<br>
+      github:<a href="https://github.com/tsujitakaa117">tsujitakaa117</a>
     </div>
 
     <v-divider class="my-4"></v-divider>

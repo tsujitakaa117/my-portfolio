@@ -32,22 +32,16 @@
         Text: "Awards",
         awards: [
           {
-            title: "Best Paper Award",
-            description: "Awarded for the paper on the development of a new measurement system using optical phenomena",
-            image: require("@/assets/IMG_2910.jpg"),
-            expandedDescription: "This paper was awarded for the development of a new measurement system using optical phenomena. The system has a resolution of atomic scale and is expected to be used in various fields.",
+            title: "五月祭2023 グランプリ",
+            description: "東大の学園祭である五月祭にてチームリーダとして参加したプロジェクトが最優秀賞を受賞しました",
+            image: require("@/assets/IMG_2131.jpg"),
+            expandedDescription: "「精密Lab.」という学科企画にて、Arduinoを用いた体験型アトラクションを制作、展示しました。",
           },
           {
-            title: "Best Presentation Award",
-            description: "Awarded for the presentation on the development of a new measurement system using optical phenomena",
+            title: "五月祭2024 グランプリ",
+            description: "昨年に引き続き、東大の学園祭である五月祭にてチームリーダとして参加したプロジェクトが最優秀賞を受賞しました",
             image: require("@/assets/IMG_2910.jpg"),
-            expandedDescription: "This presentation was awarded for the development of a new measurement system using optical phenomena. The system has a resolution of atomic scale and is expected to be used in various fields.",
-          },
-          {
-            title: "Best Poster Award",
-            description: "Awarded for the poster on the development of a new measurement system using optical phenomena",
-            image: require("@/assets/IMG_2910.jpg"),
-            expandedDescription: "This poster was awarded for the development of a new measurement system using optical phenomena. The system has a resolution of atomic scale and is expected to be used in various fields.",
+            expandedDescription: "「精密Lab.」という学科企画にて、「VRタイムトラベル」というVR体験型アトラクションを制作、展示しました。",
           },
         ],
       };
