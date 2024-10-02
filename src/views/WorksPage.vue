@@ -47,7 +47,7 @@
             title: "VR中世アーチャー",
             description: "五月祭2024出展作品:中世の世界でアーチャーとして生き抜くVRゲーム",
             image: require("@/assets/medieval.png"),
-            expandedDescription: "This paper was awarded for the development of a new measurement system using optical phenomena. The system has a resolution of atomic scale and is expected to be used in various fields.",
+            expandedDescription: "Unityを用いて、VRゲームを制作しました。VRコントローラーを使って矢を射る感覚を楽しめます。",
           },
         ],
         works_youtube: [
