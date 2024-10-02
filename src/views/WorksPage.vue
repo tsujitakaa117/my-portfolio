@@ -20,6 +20,7 @@
       ></CardComponentYoutube>
     </v-row>
   </v-container>
+  <v-spacer></v-spacer>
   </template>
   
   <script>
@@ -80,7 +81,9 @@
 
 
   <style scoped>
-
+.v-spacer {
+  height: 100px;
+}
 
   </style>
   
